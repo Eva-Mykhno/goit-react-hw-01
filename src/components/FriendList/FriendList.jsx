@@ -1,9 +1,9 @@
 import s from "./FriendList.module.css";
 import FriendListItem from "../FriendListItem/FriendListItem";
 
-export const FriendList = ({ friends = [] }) => {
+const FriendList = ({ friends = [] }) => {
   return (
-    <ul>
+    <ul className={s.friendList}>
       {friends.map((friend) => (
         <li key={friend.id}>
           <FriendListItem
@@ -16,3 +16,4 @@ export const FriendList = ({ friends = [] }) => {
     </ul>
   );
 };
+export default FriendList;

@@ -1,0 +1,29 @@
+.table {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.head {
+  background-color: rgb(67, 66, 66);
+  color: white;
+}
+
+.headText th {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.row td {
+  text-transform: capitalize;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.row:nth-of-type(even) {
+  background-color: rgb(192, 190, 190);
+}

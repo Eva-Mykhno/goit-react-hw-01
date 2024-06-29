@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.avatar {
+  width: 120px;
+}
+
+.name {
+  font-size: 32px;
+}
+
+.online {
+  font-size: 24px;
+  color: green;
+}
+.offline {
+  font-size: 24px;
+  color: red;
+}

@@ -1,9 +1,62 @@
 .container {
-  width: 1164px;
-  height: 1210px;
-  padding: 20px;
+  width: 777px;
+  height: 808px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  background-color: black;
+  margin-top: 30px;
+}
+.info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid;
+  align-items: center;
+  font-size: 56px;
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.text {
+  color: grey;
+}
+
+.media {
+  display: flex;
+  border: 2px solid gray;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c4bebe;
+  width: 257px;
+  height: 190px;
+  border-collapse: collapse;
+  border-right: 2px solid gray;
+}
+
+.titleCard {
+  font-size: 50px;
+  text-align: center;
+}
+
+.number {
+  font-size: 50px;
+  font-weight: 600;
 }

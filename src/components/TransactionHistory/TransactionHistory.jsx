@@ -1,10 +1,10 @@
-import s from "./TransactionHistory.module";
+import s from "./TransactionHistory.module.css";
 
-export const TransactionHistory = ({ items = [] }) => {
+const TransactionHistory = ({ items = [] }) => {
   return (
-    <table>
-      <thead>
-        <tr>
+    <table className={s.table}>
+      <thead className={s.head}>
+        <tr className={s.headText}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -14,7 +14,7 @@ export const TransactionHistory = ({ items = [] }) => {
       <tbody>
         {items.map(({ id, type, amount, currency }) => {
           return (
-            <tr key={id}>
+            <tr className={s.row} key={id}>
               <td>{type}</td>
               <td>{amount}</td>
               <td>{currency}</td>
@@ -25,3 +25,5 @@ export const TransactionHistory = ({ items = [] }) => {
     </table>
   );
 };
+
+export default TransactionHistory;
